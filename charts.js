@@ -247,7 +247,7 @@ var donut = new Chart(ctx4, {
         }],
         // These labels appear in the legend and in the tooltips when hovering different arcs
     labels: [
-        'Percentage of Recordings Nest is accurate(%)',
+        'Percentage of Recordings Nest is accurate (%)',
         'Percentage of Recordings Nest is inaccurate (%)',
     ]
     }
