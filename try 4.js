@@ -181,7 +181,7 @@ var ctx3 = document.getElementById("myChart3").getContext('2d')
 var line3 = new Chart(ctx3, {
     type: 'line',
     data: {
-        labels: ['00:00', '01:00', '02:00', '03:00', '04:00', '05:00', '06:00', '07:00', '08:00', '09:00', '10:00', '11:00', '12:00', '13:00', '14:00', '15:00', '16:00', '17:00', '18:00', '19:00', '20:00', '21:00', '22:00', '23:00'],
+        labels: ['00:00','01:00', '02:00', '03:00', '04:00', '05:00', '06:00', '07:00', '08:00', '09:00', '10:00', '11:00', '12:00', '13:00', '14:00', '15:00', '16:00', '17:00', '18:00', '19:00', '20:00', '21:00', '22:00', '23:00','00:00'],
         datasets: [{
             label: 'Inner Temp (°C)',
             data: [20.78, 20.5, 20.44, 20.31, 20.41, 20.44, 20.43, 20.33, 20.35, 20.67, 20.55, 20.68, 20.64, 20.91, 20.37, 20.23, 20.35, 20.44, 20.73, 20.95, 21.06, 21.19, 21.11, 20.77],
@@ -239,11 +239,16 @@ var ctx4 = document.getElementById("myChart4").getContext('2d')
 var donut = new Chart(ctx4, {
     type: 'doughnut',
     data: {
-        labels: ['00:00', '01:00', '02:00', '03:00', '04:00', '05:00', '06:00', '07:00', '08:00', '09:00', '10:00', '11:00', '12:00', '13:00', '14:00', '15:00', '16:00', '17:00', '18:00', '19:00', '20:00', '21:00', '22:00', '23:00'],
-        datasets: [{
-            label: 'Inner Temp (°C)',
+        datasets: [
+            {
             data: [15.9, (100-15.9)],
+            backgroundColor: [nesttemp,innertemp],
         }],
+        // These labels appear in the legend and in the tooltips when hovering different arcs
+    labels: [
+        'Percentage of Recordings Nest is accurate(%)',
+        'Percentage of Recordings Nest is inaccurate (%)',
+    ]
     }
 })
 
@@ -281,7 +286,7 @@ var line5 = new Chart(ctx5, {
                     id: 'y-axis-1',
                     scaleLabel:{
                         display: true,
-                        labelString: 'Difference in Temperature (°C)',
+                        labelString: 'Temperature Difference(°C)',
                     }
                   }, {
                     type: 'linear',
