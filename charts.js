@@ -109,7 +109,7 @@ var line2 = new Chart(ctx2, {
         datasets: [{
             steppedLine: 'before',
             label: 'Average Living Room Temperature (°C)',
-            data: [21, 22, 21, 20, 21, 20, 20],
+            data: [21.45, 21.54, 21.05, 19.61, 20.9, 20.16, 19.57],
 
             backgroundColor: innertemp,
             borderColor: innertemp,
@@ -126,7 +126,7 @@ var line2 = new Chart(ctx2, {
             pointHitRadius: 0.2,
         },{
             label: 'Average Nest Temperature (°C)',
-            data: [23, 23, 22, 21, 22, 22, 21],
+            data: [23.0, 23.0, 22.44, 21.03, 22.41, 21.72, 21.3],
             backgroundColor: nesttemp,
             borderColor: nesttemp,
             borderWidth: 2,
@@ -142,7 +142,7 @@ var line2 = new Chart(ctx2, {
             pointHitRadius: 0.2,
         },{
             label: 'Average Outside Temperature (°C)',
-            data: [8, 10, 9, 9, 8, 4, 4],
+            data: [7.5, 9.61, 8.77, 8.93, 7.9, 4.25, 3.61],
             backgroundColor: outertemp,
             borderColor: outertemp,
             borderWidth: 2,
