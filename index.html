@@ -20,47 +20,63 @@
   <body>
 
     <div class ="container">
-        <h3>Thermostat Data</h3>
-        <p> View thermostat trends</p>
+        <h3>Your History</h3>
+        <p> See your usage trends and variations in nest temperature over time compared with the temperature outside.  </p>
         <canvas id="myChart" width="200" height="90"></canvas>
         <p>&nbsp;</p>
+
         
 
   <p>&nbsp;</p>
   <p>&nbsp;</p>
 
-        <h3>Average Temperatures</h3>
-        <p> Average temperatures by day</p>
+        <h3>Average Temperatures this Week</h3>
+        <h5><span style="color:#E0603F";>Average inside, outside and nest temperatures per day</span></h5>
+        <p>&nbsp;</p>
+        <p> Average living room temperature this week = <b> <span style=color:rgb(219,68,55);>22 °C (NOT ECO)</span> </b></p>
         <canvas id="myChart2" width="200" height="90"></canvas>
+        
 
   <p>&nbsp;</p>
   <p>&nbsp;</p>
   <p>&nbsp;</p>
+  
 
-        <h3>Average Temperatures</h3>
-        <p> Average temperatures by day</p>
-        <canvas id="myChart5" width="200" height="90"></canvas>
+  <h3>Nest Accuracy</h3>
+  <h5><span style="color:#E0603F";>Living Room</span></h5>
+  <p>&nbsp;</p>
+  <p>Percentage of the time that Nest recorded values match the recorded living room temperature values:<b> <span style="color:#E0603F";>12.6 %</span></b></p>
+  <p>Average difference between Nest recorded temperature and living room temperature: <b><span style="color:#E0603F";>21 °C</span> </b></p>
+  <p>&nbsp;</p>
+  <div class = "row m-t-5">
+      <div class = "col-6">
+          <canvas id="myChart3" width="200" height="160"></canvas>
+
+      </div>
+      <div class = "col-6">
+          <canvas id="myChart4" width="200" height="150"></canvas>
+      
+      </div> 
+      
+  </div>
+  
 
   <p>&nbsp;</p>
   <p>&nbsp;</p>
   <p>&nbsp;</p>
+  <p>&nbsp;</p>
 
-      <h3>Average Temperatures</h3>
-      <p> Average temperatures by day</p>
+
+  <h3>How the Outside Temperature Effects your Nest Accuracy</h3>
+  <h5><span style="color:#E0603F";>Average daily difference compared to average daily outside temperature </span></h5>
+  <p>&nbsp;</p>
+  <canvas id="myChart5" width="200" height="90"></canvas>
+
+
 
       <p>&nbsp;</p>
 
-      <div class = "row m-t-5">
-        <div class = "col-6">
-            <canvas id="myChart3" width="200" height="160"></canvas>
-
-        </div>
-        <div class = "col-6">
-            <canvas id="myChart4" width="200" height="150"></canvas>
-        
-        </div> 
-        
-    </div>
+     
   <p>&nbsp;</p>
   <p>&nbsp;</p>
   <p>&nbsp;</p>
@@ -68,24 +84,29 @@
   <p>&nbsp;</p>
   <p>&nbsp;</p>
  
-    <h1 style="color:#E0603F" ALIGN=CENTER>This week's summary</h1>
+    <h1 style="color:#E0603F" ALIGN=CENTER>Total Usage Summary</h1>
     <p>&nbsp;</p>
-        <P ALIGN=CENTER>Average living room temperature =  21 °C</P>
-        <P ALIGN=CENTER>Average outside temperature =  7 °C</P>
-        <P ALIGN=CENTER>Most common weather condition =  Overcast Clouds</P>
+        <P ALIGN=CENTER>Your average living room temperature =  <b>21 °C</b></P>
+        <P ALIGN=CENTER>Average outside temperature in your location =  <b>7 °C</b></P>
+        <P ALIGN=CENTER>Most common weather condition =  <b> overcast clouds </b></P>
+        <P ALIGN=CENTER>Number of times the door was left open: <b>21</b></P>
+        
 
         <p>&nbsp;</p>
 
     <h1 style="color:#E0603F" ALIGN=CENTER>Suggestions</h1>
     <p>&nbsp;</p>
-        <P ALIGN=CENTER>Reduce your heating by just 2 °C to save £139 a year!</P>
+        <P ALIGN=CENTER> <b> Reduce your heating by just 2 °C to save £139 a year! </b> </P>
+        <p>&nbsp;</p>
+      
+    <div>
+        <img src="images/orange_house.png" alt="logo" style="width:60px;height:60px"/>
+    </div>
 
+   
     <p>&nbsp;</p>
     <p>&nbsp;</p>
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
+   
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
     <script src="try 4.js"></script>
