@@ -243,6 +243,7 @@ var donut = new Chart(ctx4, {
             {
             data: [15.9, (100-15.9)],
             backgroundColor: [nesttemp,innertemp],
+            hoverBorderColor: [white],
         }],
         // These labels appear in the legend and in the tooltips when hovering different arcs
     labels: [
